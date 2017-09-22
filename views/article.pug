@@ -1,0 +1,23 @@
+extends layout
+
+block content
+
+	h1= article.title
+	br
+	hr
+	br
+	p= article.body 
+		br
+		br
+		br
+		small &dash; &nbsp;Posted by #{author}
+	br
+	br
+	br
+
+	if user
+		if user.id ==article.author
+	
+			a.btn.btn-primary(href='/articles/edit/'+article._id) Edit 
+			= '    '
+			a.btn.btn-danger.delete-article(href='#', data-id=article._id)  Delete

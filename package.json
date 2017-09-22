@@ -1,0 +1,26 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "EX Blog",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "'Mansh Bharali",
+  "license": "ISC",
+  "dependencies": {
+    "autoloader": "^2.1.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.1",
+    "connect-flash": "^0.1.1",
+    "express": "^4.15.4",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.5",
+    "express-validator": "^4.2.0",
+    "mongoose": "^4.11.12",
+    "nodemon": "^1.12.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pug": "^2.0.0-rc.4"
+  }
+}

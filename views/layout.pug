@@ -1,0 +1,51 @@
+doctype html
+html
+	head
+		title X BLOG
+		link(rel='stylesheet' href='/css/bootstrap.min.css')
+		link(rel='stylesheet' href='/css/custom.css')
+
+	body
+		nav
+
+			ul
+				li 
+					a(href="/") Blog
+				if user
+					li
+						a(href="/articles/add") Add
+						
+					li 
+						a(href='/users/profile') profile
+
+						
+					a(class='logout ' href='/users/logout') Logout
+
+				else	
+					li
+						a(href="/users/register") Sign up
+					li
+						a(href="/users/login") Login
+							
+
+		.bar
+		.container
+			
+			!= messages('message', locals)
+
+			if errors
+				each error, i in errors
+					div(class="alert alert-danger") #{error.msg}
+
+			block content
+
+			br
+			br
+			hr
+			footer
+				p Copyright &copy; 2017
+
+		script(src='/js/jquery.min.js')
+		script(src='/js/bootstrap.min.js')
+		script(src='/js/main.js')
+

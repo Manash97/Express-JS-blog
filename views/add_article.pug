@@ -1,0 +1,46 @@
+extends layout
+
+block content
+
+	
+	br
+	br
+	form(method='POST', action='/articles/add')
+		.from-group
+			label Title:
+			input.form-control(name='title', type='text')
+		br
+		
+		.from-group
+			label Body:
+			textarea.form-control(name='body')
+		br
+		br
+			
+		input.btn.btn-primary(type='submit', value='submit')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
